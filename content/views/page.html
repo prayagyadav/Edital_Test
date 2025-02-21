@@ -1,0 +1,91 @@
+<div class="sidebar position-fixed" style="display:none">
+    <div class="block-edit-inside cus-block-inside" style="display: inline-block;padding: 1.5em;padding-top: 10px;">
+        <a href="javascript:void(0)" class="closebtn" ng-click="closeNav()"><i class="fa fa-arrow-left"
+                style="position:relative;"></i></a>
+        <h5 ng-bind-html="title | allowunsafe">{{ title }}</h5>
+        <div class="subnav">
+            <ul class="cus-inside" ng-repeat="page in pages" ng-class="{'locked': page.locked == true}">
+                <li>
+                    <h5 ng-if="!page.children"><a class="nav_pages" ng-href="#/page/{{page.id}}"
+                            class="subnavbtn">{{page.title}}</a></h5>
+                    <h5 ng-if="page.children" data-bs-toggle="collapse" data-bs-target="#havecources{{page.id}}"
+                        role="button" aria-expanded="false" aria-controls="havecources{{page.id}}"><a class="nav_pages"
+                            ng-href="javascript:;" onclick="return false;" class="subnavbtn">{{page.title}}</a></h5>
+                    <div class="position-relative">
+                        <div class="passed-course"> <span>{{page.status.completion_status}}</span> </div>
+                        <div class="progress">
+                            <div class="progress-bar" ng-style="{width: page.status.completion_percentage + '%'}" role="progressbar" aria-valuenow="{{page.status.completion_percentage}}" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+
+                    <a ng-if="page.children && page.children.length > 0" class="collapse-icon collapsed" data-bs-toggle="collapse"
+                        data-bs-target="#havecources{{page.id}}" role="button" aria-expanded="false"
+                        aria-controls="havecources{{page.id}}"></a>
+
+                    <div class="collapse" id="havecources{{page.id}}">
+                        <div class="card card-body" ng-repeat="child in page.children" ng-class="{'locked': child.locked == true}">
+                            <div class="upr-row">
+                                <h6><a class="" ng-href="#/page/{{child.id}}" class="">{{ child.title }}</a></h6>
+                                <div class="passed-course passed" ng-if="child.status.completion_status == 'completed'"> <i class="fa-solid fa-circle-check"></i><span>{{child.status.completion_status}}</span> </div>
+                                <div class="passed-course text-danger" ng-if="child.status.completion_status !== 'completed'"> <i class="fa-solid fa-warning"></i><span>{{child.status.completion_status}}</span> </div>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" ng-style="{width: child.status.completion_percentage + '%'}" role="progressbar" aria-valuenow="{{child.status.completion_percentage}}" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="mySidebar" class="ad-cus-1 position-fixed minu-zee" ng-if="settings.showNavigation == true"> <a href="#" class="ad-cus-close-1 close" ng-click="closeNav()"><i class="fas fa-arrow-left"></i></a>
+    <div class="block-edit-inside cus-block-inside">
+      <h5 ng-bind-html="title | allowunsafe">{{ title }}</h5>
+      <a href="javascript:;" class="close__menu" ng-click="closeNav()">
+        <svg width="28px" height="28px" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path fill="#000000" d="M195.2 195.2a64 64 0 0 1 90.496 0L512 421.504 738.304 195.2a64 64 0 0 1 90.496 90.496L602.496 512 828.8 738.304a64 64 0 0 1-90.496 90.496L512 602.496 285.696 828.8a64 64 0 0 1-90.496-90.496L421.504 512 195.2 285.696a64 64 0 0 1 0-90.496z"></path></g></svg>
+      </a>
+      <ul class="cus-inside" ng-repeat="page in pages" ng-class="{'locked': page.locked == true}">
+        <li>
+            <h5 ng-if="!page.children"><a class="nav_pages" ng-href="#/page/{{page.id}}"
+                    class="subnavbtn">{{page.title}}</a></h5>
+            <h5 ng-if="page.children" data-bs-toggle="collapse" data-bs-target="#havecources{{page.id}}"
+                role="button" aria-expanded="false" aria-controls="havecources{{page.id}}"><a class="nav_pages"
+                    ng-href="javascript:;" onclick="return false;" class="subnavbtn">{{page.title}}</a></h5>
+            <div class="position-relative">
+                <div class="passed-course"> <span>{{page.status.completion_status}}</span> </div>
+                <div class="progress">
+                    <div class="progress-bar" ng-style="{width: page.status.completion_percentage + '%'}" role="progressbar" aria-valuenow="{{page.status.completion_percentage}}" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+
+            <a ng-if="page.children.length > 0" class="collapse-icon collapsed" data-bs-toggle="collapse"
+                data-bs-target="#havecources{{page.id}}" role="button" aria-expanded="false"
+                aria-controls="havecources{{page.id}}"></a>
+
+            <div class="collapse" id="havecources{{page.id}}">
+                <div class="card card-body" ng-repeat="child in page.children" ng-class="{'locked': child.locked == true}">
+                    <div class="upr-row">
+                        <h6><a class="" ng-href="#/page/{{child.id}}" class="">{{ child.title }}</a></h6>
+                        <div class="passed-course passed" ng-if="child.status.completion_status == 'completed'"> <i class="fa-solid fa-circle-check"></i><span>{{child.status.completion_status}}</span> </div>
+                        <div class="passed-course text-danger" ng-if="child.status.completion_status !== 'completed'"> <i class="fa-solid fa-warning"></i><span>{{child.status.completion_status}}</span> </div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" ng-style="{width: child.status.completion_percentage + '%'}" role="progressbar" aria-valuenow="{{child.status.completion_percentage}}" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+        </li>
+      </ul>
+    </div>
+</div>
+  
+
+<div class="top-bar">
+    <button ng-click="toggleNav()" id="preview-sidebar-btn" class="sidebar-btn" ng-if="settings.showNavigation == true"> <i class="fa-solid fa-bars"></i> </button>
+    <a href="#" class="sidebar-btn" ng-if="settings.showNavigation == false"> <i class="fa-solid fa-home"></i> </a>
+    <a ng-click="exitCourse()" style="cursor:pointer;" class="text-dark" ng-if="settings.showExit == true">Exit course</a>
+</div>
+<div id="dspage" class="dspage">
+</div>

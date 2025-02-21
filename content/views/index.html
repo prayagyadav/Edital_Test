@@ -1,0 +1,64 @@
+<section class="course-preview">
+    <div class="row">
+        <div class="position-relative" ng-class="settings.showNavigation == true ? 'col-xl-6 col-lg-6 col-md-6':'col-xl-12 col-lg-12 col-md-12'" style="height:100vh">
+            <div>
+                <div class="text-on-image">
+                    <h1 ng-bind-html="title | allowunsafe">{{title}}</h1>
+                    <hr ng-if="settings.showCourseDescription == true">
+                    <div ng-bind-html="description | allowunsafe" ng-if="settings.showCourseDescription == true">{{description}}</div>
+                    <div class="container mt-5">
+                        <div class="button-next">
+                            <div class="btn-display text-center">
+                            <button type="button" class="btn btn-primary btn-small" ng-click="startCourse()">{{isContinue() ? 'RESUME':'START'}} COURSE</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-xl-6 col-lg-6 col-md-6" ng-if="settings.showNavigation == true">
+            <div class="courses-start">
+                <div class="courses-inside" ng-repeat="page in pages" ng-class="{'locked': page.locked == true}">
+                    <div class="course-block">
+                        <div class="d-flex">
+                            <div class="icon-side">
+                                <i><img ng-src="{{assetsUrl}}images/bookicon.svg" alt=""></i>
+                            </div>
+                            <div class="crse-title">
+                                <h3 ng-if="!page.children"><a ng-href="#/page/{{page.id}}">{{page.title}}</a></h3>
+                                <h3 ng-if="page.children" data-bs-toggle="collapse" data-bs-target="#havecources{{page.id}}" role="button"
+                                aria-expanded="false" aria-controls="havecources{{page.id}}"><a ng-href="#" onclick="return false;">{{page.title}}</a>
+                                </h3>
+                                <div class="passed-crs {{page.status.completion_status !== 'incomplete'?'passed':''}}">
+                                    <i class="fa-solid fa-circle-check" aria-hidden="true" ng-if="page.status.completion_status!=='incomplete'"></i>
+                                    <span>{{page.status.completion_status!=='incomplete'?'Passed':'Not Passed'}}</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" ng-style="{width: page.status.completion_percentage + '%'}" role="progressbar" aria-valuenow="{{page.status.completion_percentage}}" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <!-- Dropdown -->
+                            <a ng-if="page.children && page.children.length > 0" class="collp-icon collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#havecources{{page.id}}" role="button"
+                                aria-expanded="false" aria-controls="havecources{{page.id}}"></a>
+                        </div>
+
+                        <div class="collapse" id="havecources{{page.id}}">
+                            <div class="card card-body" ng-repeat="child in page.children" ng-class="{'locked': child.locked == true}">
+                                <div class="upr-row">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <h6 class="m-0"><a ng-href="#/page/{{child.id}}">{{ child.title }}</a></h6>
+                                        <div class="passed-crs passed"> <i class="fa-solid fa-circle-check" ng-if="child.status.completed"></i><span>{{child.status.completion_status}}</span></div>
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" ng-style="{width: child.status.completion_percentage + '%'}" role="progressbar" aria-valuenow="{{child.status.completion_percentage}}" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>

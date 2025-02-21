@@ -1,0 +1,317 @@
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1200px) {
+    .course-preview .position-relative {
+        min-height: inherit;
+        padding: 0 100px;
+    }
+    .course-preview .text-on-image {
+        padding: 160px 0;
+    }
+    .course-preview h1 {
+        font-size: 28px;
+    }
+    .course-preview hr {
+        margin: 20px 0;
+    }
+    .courses-start {
+        max-height: initial;
+        min-height: unset;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .block-edit-inside .cus-inside .progress {
+        margin-bottom: 0px;
+    }
+}
+
+
+@media (max-width: 991px){
+    .gallery-images.with-four-col li {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 979px) {
+    .small-interactive{
+        width: 60%;
+    }
+    .previewWidth {
+        width: 435px !important;
+    }
+    .smallImageInImage1{
+        width: 55%;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+    .courses-start .courses-inside {
+        padding: 0 20px;
+    }
+
+    .page-block .side-icon {
+        min-width: 100px;
+        height: 100px;
+        width: 100px;
+        position: relative;
+        overflow: hidden;
+    }
+    .page-block h3 a{
+        font-size: 14px;
+        font-weight: normal;
+        padding-left: 10px;
+        padding-right: 30px;
+    }
+    .page-block .passed-course,
+    .cus-inside .passed-course {
+        font-size: 10px;
+        bottom: 13px;
+        right: 13px;
+    }
+    .page-block .page-title {
+        padding-top: 15px;
+    }
+    .collapse-icon {
+        position: absolute;
+        top: 13px;
+        right: -13px;
+        font-size: 18px;
+    }
+    .course-preview .position-relative {
+        min-height: initial;
+        padding: 0 50px;
+    }
+    .cr-out section {
+        padding: 50px 0;
+    }
+    .page-block .progress {
+        height: 4px;
+    }
+    .courses-start {
+        margin: 30px 0;
+    }
+    .courses-start .page-block {
+        margin: 10px 0;
+        display: inline-block;
+        width: 100%;
+    }
+    .block-edit-inside .cus-inside .progress {
+        height: 4px;
+    }
+    .main-half-layout {
+        width: 100%;
+        position: relative;
+        height: 350px;
+    }
+    .main-half-layout-container {
+        width: 100%;
+        background: rgba(255,255,255,0.9);
+        margin-top: 100px;
+        padding: 40px 30px;
+        margin: 0px;
+        left: 0px;
+        right: 0px;
+    }
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+    .question-text {
+        font-size: 10px !important;
+    }
+    .video-interactive .question-content {
+        padding: 0px 0px;
+    }
+    .my-list input[type="radio"] {
+        width: 12px;
+        height: 12px;
+    }
+    .my-list span{
+        font-size: 12px;
+    }
+    .btn-vadio{
+        bottom: 25px;
+        width: 50px;
+        height: 25px;
+        font-size: 10px !important;
+    }
+    .video-js .vjs-big-play-button{
+        width: 1.5em !important;
+        height: 1.5em !important;
+    }
+    .small-interactive{
+        width: 100%;
+    }
+    .medium-interactive {
+        width: 100%;
+    }
+    .dargable-component #cardPile{
+        max-width: 48%;
+        max-height: 106px;
+    }
+    #cardSlots{
+        display: flex !important;
+        flex-wrap: nowrap !important;
+        justify-content: space-between !important;
+        align-items: stretch;
+        margin: 3rem -1.1rem !important;
+    }
+    .ui-droppable{
+        height: 114px;
+        font-size: 14px !important;
+    }
+    .dargable-component #successMessage .result{
+        font-size: 20px !important;
+    }
+    .dargable-component #successMessage a{
+        font-size: 11px !important;
+    }
+    .dargable-component #successMessage{
+        width: 100% !important;
+    }
+    .dargable-component #successMessage h4{
+        font-size: 12px;
+    }
+    /* image-compare */
+    /* div.jx-slider{
+        width: 81%;
+        height: 169%;
+    } */
+    div.jx-slider {
+        width: 100%;
+        height: 100%;
+    }
+    div.jx-image img{
+        /* width: 383px; */
+        width: 300px;
+        max-width: 383px;
+    }
+
+    .previewWidth {
+        width: 300px !important;
+    }
+    /* hotspot */
+    .section-hotspot .hotspot-component{
+        max-width: 100%;
+    }
+    .smallvideo, .videosmall {
+        width: 100%;
+        position: relative;
+        left: 0;
+    }
+    .mediumvideo {
+        width: 100%;
+        position: relative;
+        left: 0;
+    }
+    /* image1 */
+    .zoom-gallery .text-center {
+        margin-left: 1px !important;
+    }
+    .smallImageInImage1{
+        width: 100%;
+    }
+    .mediumImageInImage1 {
+        width: 100%;
+    }
+    .section-interactive_video .questionbox-container .questionbox{
+        margin: 20px 12px 20px;
+    }
+
+    .gallery-images.container.with-two-col {
+        height: 350px;
+    }
+
+    .gallery-images.container.with-three-col {
+        height: 500px;
+    }
+
+    .gallery-images.container.with-four-col {
+        height: 750px;
+    }
+
+    .gallery-images.with-two-col li, 
+    .gallery-images.with-three-col li,
+    .gallery-images.with-four-col li {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    ul.zoom-gallery {
+        height: 100%;
+    }
+
+    .twoCol {
+        height: 50% !important;
+    }
+
+    .threeCol {
+        height: 33% !important;
+    }
+
+    .fourCol {
+        height: 25% !important;
+    }
+    
+    .section-line_chart > .section-content, .section-bar_chart > .section-content{
+        height: 300px !important;
+    }
+    .question-section-type form input{
+        width: 70%;
+    }
+    .question-section-type form button{
+        width: 30%;
+    }
+    .section-sorting .cards {
+        max-width: 170px;
+        height: 145px;
+    }
+    .section-sorting .cards div.card {
+        height: 100%;
+    }
+    .section-sorting .cardboxes {
+        justify-content: space-evenly;
+        margin: 10px auto;
+        flex-wrap: wrap;
+    }
+    .section-sorting .cardboxes div.cardbox {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+    .main-half-layout {
+        width: 100%;
+        position: relative;
+        height: 350px;
+    }
+    .main-half-layout-container {
+        width: 100%;
+        background: rgba(255,255,255,0.9);
+        margin-top: 100px;
+        padding: 40px 30px;
+        margin: 0px;
+        left: 0px;
+        right: 0px;
+    }
+}
+
+
+
+
+@media (max-width: 480px) {
+    .ad-cus-1 {
+        width: 100%;
+        margin-left: -110%;
+    }
+}

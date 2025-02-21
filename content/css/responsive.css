@@ -1,0 +1,541 @@
+
+/* Responsive CSS */
+@media(min-width:1400px) and (max-width:1920px) {
+}
+
+@media(min-width:1400px) {
+    .slides-quize .quiz-process-intro{
+        min-width: auto;
+        max-width: 1150px;
+        width: 100%;
+        min-height: 680px;
+    }
+    .slides-quize .quiz-inside, .slides-quize .matching-component    {
+        max-height: 550px;
+}
+}
+@media(min-width:1200px) and (max-width:1500px) {
+.slid-overright .text-block {
+    padding-left: 5%;
+}
+}
+@media(max-width:1200px) {
+.flip-cards {
+    height: 250px;
+}
+.col-md-6 .flip-cards, .col-sm-6 .flip-cards, .col-lg-6 .flip-cards {
+    height: 380px;
+}
+.course-output .position-relative {
+    min-height: inherit;
+    padding: 0 100px;
+}
+.course-output .text-over-up{
+    padding: 60px 0;
+}
+.course-output h1{
+    font-size: 28px;
+}
+.course-output hr{
+    margin: 20px 0;
+}
+.courses-start{
+    max-height: initial;
+}
+.option-expand-collpse .accordion .card-body{
+    min-width: 590px;
+    max-width: 590px;
+}
+.option-expand-collpse .accordion .card-body article{
+    padding: 20px;
+}
+.option-expand-collpse .accordion .card-body .row, .option-expand-collpse .accordion .card{
+    min-height: 246px;
+}
+.slid-overright .text-block{
+    padding-left: 3%;
+}
+.slid-overright{
+    padding-top: 30px;
+}
+.text-block .edit-text h2{
+    margin-bottom: 30px !important;
+    font-size: 28px;
+}
+.collapse-horizontal-tbs .tab-pane hr{
+    margin: 15px 0;
+}
+.play-sliders .cards{
+    height: 450px;
+}
+}
+@media(min-width:992px) and (max-width:1199px) {
+}
+@media(max-width:991px) {
+    .question-videos-comp .question-content{
+        padding:50px 20px;
+    }
+    .question-text .question-label{
+        left: 20px;
+    }
+    .container{
+        max-width: 96%;
+    }
+    .slides-quize .slide{
+        padding: 0 15px;
+    }
+    .Slide-coverflow{
+        max-width: 600px;
+        width: 100%;
+    }
+    .Slide-coverflow .flip-cards{
+        height: 330px;
+    }
+    .slid-overright .pagi-trvl{
+        top: -15px;
+    }
+    .block-edit-inside .cus-inside .progress{
+        margin-bottom: 0px;
+    }
+}
+@media(max-width:800px) {
+    .slides-quize .quiz-process-intro{
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .Slide-coverflow .flip-cards{
+        height: 340px;
+    }
+    .result-display{
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:991px) {
+.option-expand-collpse .accordion .card-body .row .col.col-img{
+    display: none;
+}
+.gallery-images ul li {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.flip-cards {
+    height: 180px;
+}
+.col-md-6 .flip-cards, .col-sm-6 .flip-cards, .col-lg-6 .flip-cards {
+    height: 280px;
+}
+.option-expand-collpse .accordion .card-body{
+    min-width: 400px;
+}
+.slid-overright h2.mb-5, .vertical-slide-align .swiper-slide h2.mb-5{
+    margin-bottom: 20px !important;
+}
+.prallex-compo .swiper-wrapper{
+    padding: 80px 0;
+}
+.prallex-compo .swiper-button-next, .prallex-compo .swiper-button-prev{
+    display: none;
+}
+}
+
+@media(max-width:767px) {
+.question-section-type form input {
+    width: 70%;
+}
+.flip-cards {
+    height: 250px;
+}
+.col-md-6 .flip-cards, .col-sm-6 .flip-cards, .col-lg-6 .flip-cards {
+    height: 380px;
+}
+.all_component_popup_inside ul li {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.question-section-type form button {
+    width: 30%;
+}
+.text-img-block .img-block {
+    margin: 15px 0;
+}
+.dargable-component .drag-box {
+    width: 100%;
+}
+.intro-main .text-intro a span {
+    border-radius: 6px;
+}
+.courses_lists .view_cpoint .list_cr {
+    display: inline-block;
+}
+.courses_lists .container {
+    max-width: 100%;
+}
+.courses_lists .view_cpoint .list_cr {
+    padding-right: 15px;
+}
+.courses_lists .view_cpoint .list_cr .list-edit-info {
+    position: relative;
+    width: 100%;
+    border-left: 0px;
+    padding-bottom: 0px !important;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 15px;
+    padding-top: 15px !important;
+    border-top: 1px solid #e4e4e4;
+    justify-content: space-between;
+}
+.courses_lists .crs_down_sec .card .list_cr {
+    background: none;
+}
+.courses_lists .crs_down_sec .card {
+    padding-left: 0px;
+    background: #fafafa;
+}
+.view_cpoint li .list-edit-info a.btn {
+    min-width: 90px;
+    max-height: 90px;
+    margin-left: 10px;
+}
+.flip-cards .position-c-c h4 {
+    font-size: 14px;
+}
+.courses-start .courses-inside {
+    padding: 0 20px;
+}
+.course-block .icon-side {
+    min-width: 100px;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    overflow: hidden;
+}
+.course-block h3 {
+    font-size: 14px;
+    font-weight: normal;
+    padding-left: 10px;
+    padding-right: 30px;
+}
+.course-block .passed-crs, .cus-inside .passed-crs {
+    font-size: 12px;
+    bottom: 13px;
+    right: 13px;
+}
+.course-block .crse-title {
+    padding-top: 15px;
+}
+.collp-icon {
+    position: absolute;
+    top: 13px;
+    right: -13px;
+    font-size: 18px;
+}
+.course-output .position-relative {
+    min-height: initial;
+    padding: 0 50px;
+}
+.quiz-process-intro .radio{
+    min-width: 100%;
+}
+.question-videos-comp .modal-content{
+    max-width: 440px;
+    width: 100%;
+}
+.question-videos-comp .question-content h2{
+    font-size: 16px;
+}
+.question-videos-comp .modal-content{
+    box-shadow: 0 0 50px rgb(0 0 0 / 20%);
+}
+.question-videos-comp .outer-wrapper h1{
+    font-size: 18px;
+}
+.dargable-component #successMessage{
+    width: 100% !important;
+}
+.dargable-component #successMessage h4{
+    font-size: 14px;
+}
+.dargable-component #successMessage .result{
+    font-size: 22px;
+}
+.dargable-component #successMessage a{
+    font-size: 12px;
+}
+.main-half-layout{
+    width: 100%;
+    position: relative;
+    height: 350px;
+}
+.main-half-layout-container{
+    width: 100%;
+    background: rgba(255,255,255,0.9);
+    margin-top: 100px;
+    padding: 40px 30px;
+    margin: 0px;
+    left: 0px;
+    right: 0px;
+}
+h2{
+    font-size: 26px;
+}
+.main-half-layout-container.half_right_layout{
+    margin: 0px;
+}
+.col-reve-flex-mobile{
+    flex-direction: column-reverse;
+}
+.slid-overright .text-block{
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+.slid-overright{
+    padding-top: 0px;
+}
+.slid-overright .ab-right-imgs{
+    margin-bottom: 30px;
+    padding-top: 30px;
+}
+.vertical-slide-align .pagi-trvl{
+    left: 20px;
+    right: auto;
+}
+.slid-overright .col-md-6.pr-0{
+    padding: 0px;
+}
+.slid-overright .edit-text .mb-5{
+    margin-bottom: 20px !important;
+}
+.travelling-slider .pagi-trvl{
+    left: 20px;
+}
+.collapse-horizontal-tbs .col-9, .collapse-horizontal-tbs .col-3{
+    flex: 0 0 100%;
+    max-width: 100%;
+    border: none;
+    padding: 0px 15px;
+}
+.collapse-horizontal-tbs .flex-column.nav-pills{
+    display: flex;
+    flex-direction: initial !important;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.collapse-horizontal-tbs .flex-column.nav-pills a{
+    padding: 0px;
+    font-size: 18px;
+}
+.collapse-horizontal-tbs .tab-pane hr{
+    margin: 15px 0;
+}
+.country-trip article{
+    padding: 50px 15px;
+    padding-bottom: 100px;
+}
+.option-expand-collpse .accordion .card-header a{
+    padding: 15px 20px;
+}
+.option-expand-collpse .accordion .card-header{
+    width: 100%;
+}
+.option-expand-collpse .accordion{
+    display: block;
+}
+.option-expand-collpse .accordion .card{
+    display: block;
+}
+.option-expand-collpse .accordion .card-body .row, .option-expand-collpse .accordion .card{
+    min-height: initial;
+}
+.option-expand-collpse .accordion .card-body{
+    padding: 0;
+    min-width: 100%;
+    max-width: 100%;
+}
+.option-expand-collpse .accordion .card-body article{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+h1{
+    font-size: 32px;
+}
+.vertical-slide-align .edit-text{
+    margin-top: 30px;
+}
+.vertical-slide-align .verticalSwiper {
+    max-height: 400px;
+    margin-bottom: 40px;
+}
+.collapse-horizontal-tbs .flex-column.nav-pills{
+    background: #f5f5f5;
+    padding: 0 10px;
+    border-radius: 8px;   
+    display: flex;
+    flex-wrap: wrap;
+}
+.collapse-horizontal-tbs .flex-column.nav-pills a{
+    padding: 18px 10px !important;
+    font-size: 16px;
+    min-width: 25%;
+    width: 25%;
+    text-align: center;
+}
+.Slide-coverflow{
+    max-width: 600px;
+    width: 100%;
+}
+.Slide-coverflow .flip-cards{
+    height: 300px;
+}
+.option-expand-collpse .accordion .collapsing.width{
+    position: relative;
+    height: 0;
+    width: auto;
+    overflow: hidden;
+    transition: width none;
+    transition: height .35s ease;
+}
+.prallex-compo .swiper-pagination {
+    width: auto;
+    left: 20px;
+}
+.cr-out section{
+    padding: 50px 0;
+}
+.course-block .progress{
+    height: 4px;
+}
+.courses-start{
+    margin: 30px 0;
+}
+.courses-start .course-block {
+    margin: 10px 0;
+    display: inline-block;
+    width: 100%;
+}
+.block-edit-inside .cus-inside .progress{
+    height: 4px;
+}
+}
+@media(max-width:640px) {
+.slides-quize .quiz-process-intro h3{
+    font-size: 22px;
+}
+.course-block .icon-side {
+    min-width: 80px;
+    height: 80px;
+    width: 80px;
+    position: relative;
+    overflow: hidden;
+}
+.collapse-horizontal-tbs .flex-column.nav-pills a{
+    min-width: 33.3333%;
+    width: 33.3333%;
+}
+.option-expand-collpse .accordion .card-body{
+    padding: 0;
+    min-width: 400px;
+    max-width: 100%;
+}
+.matching-component .qst-matching span{
+    font-size: 12px;
+    line-height: 16px;
+}
+.course-block .icon-side i img {
+    width: 20px;
+}
+.matching-component i.drag-connected:before{
+    left: 3px;
+}
+.matching-component .qst-matching .fa-solid{
+    right: -1px;
+}
+.matching-component .dragElement, .matching-component .dragElement{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+.matching-component .dropElement{
+    padding-left: 30px;
+}
+.matching-component .dragElement{
+    padding-right: 30px;
+}
+.matching-component #dropUL li b{
+    left: -1px;
+}
+.quiz-process-intro{
+    padding: 30px;
+}
+.chat-popup{
+    right: 0px;
+    left: 0px;
+}
+.accessibilities-bottom{
+    max-width: 98%;
+    margin: 0px auto;
+    left: 0px;
+    right: 0px;
+}
+section{
+    padding: 30px 0;
+}
+.matching-component .qst-matching{
+    padding: 20px;
+    padding-top: 0px;
+}
+.slides-quize .matching-component .qst-matching{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.slides-quize .matching-component, .slides-quize .quiz-inside{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.Slide-coverflow{
+    max-width: 500px;
+    width: 100%;
+}
+.Slide-coverflow .flip-cards{
+    height: 300px;
+}
+.cvr-skide .navi-cvr{
+    top: auto;
+    bottom: 10px;
+}
+.cvr-skide  .swiper-button-next:after, .cvr-skide .swiper-rtl .swiper-button-prev:after, .cvr-skide .swiper-button-prev:after, .cvr-skide .swiper-rtl .swiper-button-next:after{
+    font-size: 24px;
+}
+.slid-overright .swiper-pagination-bullet{
+    margin: 0 2px;
+    width: 22px;
+}
+.vertical-slide-align .swiper-pagination-bullet{
+    height: 22px;
+    margin: 5px 0;
+}
+.vertical-slide-align .img-block .verticalSwiper{
+    padding-left: 60px;
+}
+}
+@media(max-width:480px) {
+.question-videos-comp .modal-content{
+    max-width: 320px;
+}
+.option-expand-collpse .accordion .card-body{
+    padding: 0;
+    min-width: 300px;
+    max-width: 100%;
+}
+
+.Slide-coverflow .flip-cards{
+    height: 200px;
+}
+.ad-cus-1{
+    width: 100%;
+    margin-left: -110%;
+}
+}
